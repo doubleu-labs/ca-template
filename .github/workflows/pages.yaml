@@ -19,8 +19,11 @@ jobs:
 # Copy files to Pages deploy directory                                         #
 ################################################################################
 
-    # Copy DER-encoded Certificates and DER-encoded CRLs
+    # Copy DER-encoded Certificates and DER-encoded CRLs from repository root
     # - run: cp *.{crl,crt} dist/
+
+    # Copy DER-encoded Certificates and DER-encoded CRLs from subdirectory
+    # - run: cp subdirectory/*.{crl,crt} dist/
     
     # Copy Pages CNAME file to the Pages directory
     # - run: cp CNAME dist/
